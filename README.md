@@ -13,30 +13,21 @@
 </header>
 
 <main>
-    
     <section class="box">
         <h2>Click the Image </h2>
         <img id="mainImage" src="c:\Users\GADGET STORE\Desktop\ALL\WEB\assignment 1\image\img1.png" alt="Image" class="interactive-img">
     </section>
-
-    
     <section class="box">
         <h2>Sign In Form</h2>
-
         <form id="loginForm">
             <label>Email:</label>
             <input type="text" id="email">
-
             <label>Password:</label>
             <input type="password" id="password">
-
             <button type="button" id="submitBtn">Submit</button>
-
             <p id="formMessage"></p>
         </form>
     </section>
-
-
     <section class="box">
         <h2>Change Text Button</h2>
         <p id="changeText">This text will change when you click the button.</p>
@@ -96,7 +87,6 @@ button:hover {
     background: rgb(143, 138, 138);
 }
 </style>
- <!-- Form -->
     <section class="box">
         <h2>Sign In Form</h2>
         <form id="loginForm">
@@ -108,8 +98,6 @@ button:hover {
             <p id="formMessage"></p>
         </form>
     </section>
-
-    <!-- Text Change -->
     <section class="box">
         <h2>Change Text Button</h2>
         <p id="changeText">This text will change when you click the button.</p>
@@ -117,30 +105,20 @@ button:hover {
     </section>
 
 </main>
-
-<!-- JavaScript Inline -->
 <script>
-    // Theme Switcher
     document.getElementById("themeBtn").onclick = function () {
         document.body.classList.toggle("dark");
     };
-
-    // Image toggle
     document.getElementById("mainImage").onclick = function () {
         this.src = this.src.includes("img1.png") ? "images/img2.png" : "images/img1.png";
-    };
-
-    // Change text button
+    }
     document.getElementById("textBtn").onclick = function () {
         document.getElementById("changeText").innerText = "The text has been changed successfully!";
     };
-
-    // Form Validation
     document.getElementById("submitBtn").onclick = function () {
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value.trim();
         const message = document.getElementById("formMessage");
-
         if (email === "" || password === "") {
             message.style.color = "red";
             message.innerText = "⚠ All fields are required.";
