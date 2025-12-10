@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yves</title>
+    <title>Yves 01.</title>
     <style>
         body { font-family: Arial; margin: 0; padding: 0; background: white; color: rgb(146, 141, 141); }
         header { background: #6d6d6e; padding: 20px; text-align: center; color: white; }
@@ -25,7 +25,7 @@
 
 <main>
 
-   
+
     <section class="box">
         <h2>Click the Image to Change It</h2>
         <img id="mainImage" src="c:\Users\GADGET STORE\Desktop\image\img1.png" alt="Interactive Image" class="interactive-img">
